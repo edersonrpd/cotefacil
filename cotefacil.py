@@ -56,13 +56,14 @@ def cotefacil(file: str):
             linha = fp.readline()
 
     print('-' * 48)
-    print(f'Pedido: {pedido}  Arquivo: {file}')
+    print(f'|Pedido: {pedido} | Arquivo: {file}|')
     print('-' * 48)
-    print(f'CNPJ Cli: {cnpj_cliente}')
+    print(f'CNPJ Cli: {cnpj_cliente} ')
     print(f'CNPJ For: {cnpj_fornecedor}')
     print(f'Condição: {cod_cond_pgto}')
     print(f'Total Produtos: {tot_produto}')
-    print('')
+    print('-' * 48 )
+    
     for produto, qtde in zip(produtos, qtde_produto):
         print(f'EAN: {produto} Qtd: {qtde}')
     print('')
