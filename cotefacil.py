@@ -7,7 +7,6 @@ if ('sample_data' and '.config') in arquivos:
   arquivos.remove('sample_data')
   arquivos.remove('.config')
 
-print(arquivos)
 
 def cotefacil(file: str):
   cnpj_cliente = ''
